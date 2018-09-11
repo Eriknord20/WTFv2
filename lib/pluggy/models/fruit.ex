@@ -36,7 +36,7 @@ defmodule Pluggy.Fruit do
 	end
 
 	def to_struct_list(rows) do
-		for [id, name, tastiness] <- rows, do: %Fruit{id: id, name: name, tastiness: tastiness}
+		for [{id, name, tastiness}] <- rows, do: %Fruit{id: id, name: name, tastiness: tastiness}
 	end
 
 
