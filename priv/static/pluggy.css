@@ -4,14 +4,16 @@ body {
 
 .main{
 	border:3px solid black;
-
+	width: 90%;
+	height: 20%;
 
 
 }
 
 .center{
 	border:3px solid green;
-
+	width: 90%;
+	height: 50%;
 
 
 
@@ -19,7 +21,8 @@ body {
 
 .bottom{
 	border:3px solid blue;
-
+	width: 90%;
+	height: 20%;
 
 
 
