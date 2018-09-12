@@ -8,7 +8,7 @@
 	<%= template %>
 	<div class="main">
 		<div class="top">
-			git
+			
 		</div>
 
 		<div class="center">
