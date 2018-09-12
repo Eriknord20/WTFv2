@@ -24,7 +24,6 @@ defmodule Pluggy.Router do
   plug(:dispatch)
 
   get "/students/:id",     do: StudentController.show(conn, id) 
-  get "students/new",      do: StudentController.new(conn)
   get "/students",         do: StudentController.index(conn)
   get "/fruits",           do: FruitController.index(conn)
   get "/fruits/new",       do: FruitController.new(conn)
