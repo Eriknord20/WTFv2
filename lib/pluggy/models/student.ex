@@ -1,7 +1,7 @@
 defmodule Pluggy.Student do
   require IEx
   alias Pluggy.Student
-  defstruct(id: nil, username: "")
+  defstruct(id: nil, username: "", first_name: "", last_name: "")
   
   
   def get(id) when is_integer(id) do
