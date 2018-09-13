@@ -7,14 +7,10 @@
 <body>
 	<div class="main">
 		<div class="top">
-<<<<<<< HEAD
+
 		
 	<%= template %>
 			
-=======
-			<form action="/students/login" method="post"><button type="submit" class="login">Login</button></form>
-			<form action="/students/logout" method="post"><button type="submit" class="Logout">Logout</button></form>
->>>>>>> 849334a80c699f1ec4913f2b5644dfc6a443e610
 		</div>
 
 		<div class="center">
