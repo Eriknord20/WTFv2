@@ -1,29 +1,40 @@
 body {
-	background-color: peachpuff;
+	background-color: #1a237e;
 }
 
 .main{
 	border:3px solid black;
+	height: 88vh;
+	width: 70vw;
+	margin: auto;
+	background-color: #3f51b5;
+
+
+
+}
+.top{
+	border:3px solid black;
 	width: 90%;
 	height: 20%;
-
+	margin: auto;
+	background-color: #1a237e;
 
 }
 
 .center{
-	border:3px solid green;
+	border:3px solid black;
 	width: 90%;
-	height: 50%;
-
-
+	height: 57.5%;
+	margin: auto;
+	background-color: #1a237e;
 
 }
 
 .bottom{
-	border:3px solid blue;
+	border:3px solid black;
 	width: 90%;
 	height: 20%;
-
-
+	margin: auto;
+	background-color: #1a237e;
 
 }

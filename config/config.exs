@@ -7,7 +7,11 @@ config :pluggy,
     pool: DBConnection.Poolboy,
     pool_size: 20, 
     hostname: "localhost", # or address
+<<<<<<< HEAD
     database: "WTFv2",
+=======
+    database: "testdb",
+>>>>>>> Erics
     username: "ericp",
     password: "letmeinpls"
   ]
