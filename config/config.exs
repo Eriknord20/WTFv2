@@ -5,21 +5,13 @@ use Mix.Config
 config :pluggy,
   db: [
     pool: DBConnection.Poolboy,
-<<<<<<< HEAD
     pool_size: 20,
     # or address
     hostname: "localhost",
     database: "WTFv2",
     username: "wtf",
     password: "qwerty"
-=======
-    pool_size: 20, 
-    hostname: "localhost", # or address
-    database: "testdb",
-    username: "ericp",
-    password: "letmeinpls"
->>>>>>> 849334a80c699f1ec4913f2b5644dfc6a443e610
-  ]
+
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
