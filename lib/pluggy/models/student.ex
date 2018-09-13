@@ -6,7 +6,6 @@ defmodule Pluggy.Student do
     alias Pluggy.Student
     
     def get(id) do
-        IO.puts "hej!!"
         Postgrex.query!(DB, "SELECT (id, first_name, last_name) FROM students WHERE id = $1 LIMIT 1", [String.to_integer(id)], [pool: DBConnection.Poolboy]).rows
         # IEx.pry
         |>to_struct

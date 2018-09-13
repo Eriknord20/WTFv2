@@ -8,8 +8,8 @@ config :pluggy,
     pool_size: 20, 
     hostname: "localhost", # or address
     database: "WTFv2",
-    username: "ericp",
-    password: "letmeinpls"
+    username: "WTF",
+    password: "qwerty"
   ]
 
 # This configuration is loaded before any dependency and is restricted
