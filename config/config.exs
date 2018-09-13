@@ -5,8 +5,9 @@ use Mix.Config
 config :pluggy,
   db: [
     pool: DBConnection.Poolboy,
-    pool_size: 20, 
-    hostname: "localhost", # or address
+    pool_size: 20,
+    # or address
+    hostname: "localhost",
     database: "WTFv2",
     username: "WTF",
     password: "qwerty"
