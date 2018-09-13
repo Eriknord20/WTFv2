@@ -17,7 +17,7 @@ defmodule Pluggy.StudentController do
     current_user =
       case session_user do
         nil -> nil
-        _ -> User.get(session_user)
+        _ -> Student.get(session_user)
       end
 
     send_resp(conn, 200, render("students/index", user: current_user))
@@ -30,7 +30,7 @@ defmodule Pluggy.StudentController do
     password = params["pwd"]
 
     result =
-      Postgrex.query!(DB, "SELECT id, password_hash FROM users WHERE username = $1", [username],
+      Postgrex.query!(DB, "SELECT id, password FROM students WHERE username = $1", [username],
         pool: DBConnection.Poolboy
       )
 

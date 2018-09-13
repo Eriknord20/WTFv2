@@ -9,7 +9,7 @@ config :pluggy,
     # or address
     hostname: "localhost",
     database: "WTFv2",
-    username: "wtf",
+    username: "WTF",
     password: "qwerty"
   ]
 

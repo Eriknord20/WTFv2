@@ -3,12 +3,12 @@
 
 
 <%= if user do %>
-			<form action="/users/logout" method="post">
+			<form action="/students/logout" method="post">
 				<button type="submit">Log Out</button>
 			</form>
 		<% else %>
 
-		<form action="/users/login" method="post">
+		<form action="/students/login" method="post">
 			<label for="username">Username</label>
 			<input type="text" name="username" id="username" />
 			<label for="password">Password</lagel>
