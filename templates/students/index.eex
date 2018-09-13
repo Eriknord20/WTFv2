@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="/pluggy2.css">
 
 
-<%= if user do %>
+		<%= if user do %>
 			<form action="/students/logout" method="post">
 				<button type="submit">Log Out</button>
 			</form>
@@ -19,4 +19,4 @@
             <button type="submit" style="margin:20px"> Register</button>
             
 		</form>
-<% end %>
+		<% end %>

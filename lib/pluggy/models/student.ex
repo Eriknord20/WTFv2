@@ -2,19 +2,23 @@ defmodule Pluggy.Student do
   require IEx
   alias Pluggy.Student
   defstruct(id: nil, username: "", first_name: "", last_name: "")
-  
-  
+
   def get(id) when is_integer(id) do
     Postgrex.query!(
-      DB, "SELECT (id, username) FROM students WHERE id = $1 LIMIT 1", [id],
+      DB,
+      "SELECT (id, username) FROM students WHERE id = $1 LIMIT 1",
+      [id],
       pool: DBConnection.Poolboy
     ).rows
     # IEx.pry
     |> to_struct
   end
+
   def get(id) do
     Postgrex.query!(
-      DB, "SELECT (id, username) FROM students WHERE id = $1 LIMIT 1", [String.to_integer(id)],
+      DB,
+      "SELECT (id, username) FROM students WHERE id = $1 LIMIT 1",
+      [String.to_integer(id)],
       pool: DBConnection.Poolboy
     ).rows
     # IEx.pry
