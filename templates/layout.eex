@@ -8,6 +8,7 @@
 	<%= template %>
 	<div class="main">
 		<div class="top">
+		    
 			<form action="/students/login" method="post"><button type="submit">Login</button></form>
 			<form action="/students/logout" method="post"><button type="submit">Logout</button></form>
 		</div>

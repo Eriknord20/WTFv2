@@ -8,7 +8,7 @@ config :pluggy,
     pool_size: 20, 
     hostname: "localhost", # or address
     database: "WTFv2",
-    username: "WTF",
+    username: "wtf",
     password: "qwerty"
   ]
 
