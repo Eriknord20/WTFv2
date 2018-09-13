@@ -16,8 +16,8 @@ defmodule Pluggy.Student do
         last_name = params["last_name"]
         username = params["username"]
         pwd = params["pwd"]
-		
-        Postgrex.query!(DB, "INSERT INTO students (first_name, last_name, username, password) VALUES ($1, $2, $3, $4)", [first_name, last_name, username, pwd], [pool: DBConnection.Poolboy])	
+		hashed_password = Bcrypt.hash_pwd_salt(pwd)
+        Postgrex.query!(DB, "INSERT INTO students (first_name, last_name, username, password) VALUES ($1, $2, $3, $4)", [first_name, last_name, username, hashed_password], [pool: DBConnection.Poolboy])	
 	end
 
     def to_struct([[{id, first_name, last_name}]]) do
