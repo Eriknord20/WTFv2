@@ -8,9 +8,9 @@ config :pluggy,
     pool_size: 20,
     # or address
     hostname: "localhost",
-    database: "WTFv2",
-    username: "wtf",
-    password: "qwerty"
+    database: "testdb",
+    username: "ericp",
+    password: "letmeinpls"
   ]
 
 # This configuration is loaded before any dependency and is restricted
