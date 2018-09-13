@@ -3,12 +3,15 @@ defmodule Pluggy.User do
 
   alias Pluggy.User
 
-  def get(id) do
+  def get(id) when is_integer(id) do 
     Postgrex.query!(DB, "SELECT id, username FROM users WHERE id = $1 LIMIT 1", [id],
       pool: DBConnection.Poolboy
     ).rows
     |> to_struct
   end
+
+
+
 
   def to_struct([[id, username]]) do
     %User{id: id, username: username}
