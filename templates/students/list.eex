@@ -1,8 +1,9 @@
-<%= if user do %>
+<%= if auth.auth = 1 do %>
 <form action="students/show" method="get">
     <label for="limit">Select the amont of stundets you want to list</label>
     <input type="number" name="limit" id="limit">
+    <button type="submit">submit</button>
 </form>
 <%= else %>
-
+    <h1>Sorry, you're not allowed to be here</h1>
 <%= end %>

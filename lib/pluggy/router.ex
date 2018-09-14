@@ -39,7 +39,7 @@ defmodule Pluggy.Router do
 
   post("/students/login", do: StudentController.login(conn, conn.body_params))
   post("/students/logout", do: StudentController.logout(conn))
-
+  get("/students/list", do: StudentController.list(conn))
   get("/students/:id", do: StudentController.show(conn, id))
 
   match _ do

@@ -19,12 +19,23 @@ defmodule Pluggy.StudentController do
         nil -> nil
         _ -> Student.get(session_user)
       end
-
+      IO.inspect current_user
     send_resp(conn, 200, render("students/index", user: current_user))
   end
-
   def show(conn, id), do: send_resp(conn, 200, render("students/show", student: Student.get(id)))
+  def list(conn) do
+    session_user = conn.private.plug_session["user_id"]
+
+    current_user =
+      case session_user do
+        nil -> nil
+        _ -> Student.get(session_user)
+      end 
+      id = current_user.id
+    send_resp(conn, 200, render("students/list", user: current_user, auth: Student.get(id)))
+  end
   # IEx.pry
+  
   def login(conn, params) do
     username = params["username"]
     password = params["pwd"]
