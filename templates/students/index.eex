@@ -1,6 +1,6 @@
 
 <h1 style="text-align:center; color:#0288d1">What's their face</h1>
-<link rel="stylesheet" type="text/css" href="/pluggy2.css">
+<link rel="stylesheet" type="text/css" href="/pluggy.css">
 
 
 <%= if user do %>
@@ -9,14 +9,15 @@
 			</form>
 		<% else %>
 
+	<div class="Login">
 		<form action="/students/login" method="post">
-			<label for="username">Username</label>
+			<label style="color:#0288d1; font-size: 30px"for="username">Username: </label>
 			<input type="text" name="username" id="username" />
-			<label for="password">Password</label>
+			<br>
+			<label style="color:#0288d1; font-size: 30px;margin-left: 6px"for="password">Password: </label>
 			<input type="password" name="pwd" id="password" />
             <br>
-            <button type="submit">Log In</button> 
-            <a href="http://localhost:3000/students/new"> <button type="submit" style="margin:20px"> Register</button></a>
-            
+			<button type="submit">Log In</button> 
 		</form>
+	</div>
 <% end %>
