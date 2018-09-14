@@ -1,0 +1,8 @@
+<%= if user do %>
+<form action="students/show" method="get">
+    <label for="limit">Select the amont of stundets you want to list</label>
+    <input type="number" name="limit" id="limit">
+</form>
+<%= else %>
+
+<%= end %>

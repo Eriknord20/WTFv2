@@ -17,7 +17,13 @@
 			<label style="color:#0288d1; font-size: 30px;margin-left: 6px"for="password">Password: </label>
 			<input type="password" name="pwd" id="password" />
             <br>
-			<button type="submit">Log In</button> 
+            <button type="submit">Log In</button> 
+           
+            
+		</form>
+		<form action="/students/new" method="GET">
+			<button type="submit" style="margin:20px"> Register</button>
+		
 		</form>
 	</div>
 <% end %>
