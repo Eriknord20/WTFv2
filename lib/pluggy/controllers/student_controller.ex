@@ -32,10 +32,11 @@ defmodule Pluggy.StudentController do
         _ -> Student.get(session_user)
       end 
       id = current_user.id
-    send_resp(conn, 200, render("students/list", user: current_user, auth: Student.get(id)))
+      # IEx.pry
+    send_resp(conn, 200, render("students/list", user: current_user, student: Student.get(id)))
   end
   # IEx.pry
-  
+  %{ auth: 4, first_name: "as", id: 13, last_name: "as", username: "as"}
   def login(conn, params) do
     username = params["username"]
     password = params["pwd"]
