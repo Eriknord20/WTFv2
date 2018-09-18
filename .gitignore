@@ -24,3 +24,5 @@ pluggy-*.tar
 
 /config/config.exs
 
+/node_modules
+
