@@ -24,12 +24,9 @@ defmodule Pluggy.Router do
   get("/students/new", do: StudentController.new(conn))
   get("/students/test", do: StudentController.test(conn))
   get("/students", do: StudentController.index(conn))
-  # get("/fruits", do: FruitController.index(conn))
-  # get("/fruits/new", do: FruitController.new(conn))
-  # get("/fruits/:id", do: FruitController.show(conn, id))
+
   # get("/fruits/:id/edit", do: FruitController.edit(conn, id))
 
-  # post("/fruits", do: FruitController.create(conn, conn.body_params))
   post("/students", do: StudentController.create(conn, conn.body_params))
   # should be put /fruits/:id, but put/patch/delete are not supported without hidden inputs
   # post("/fruits/:id/edit", do: FruitController.update(conn, id, conn.body_params))
