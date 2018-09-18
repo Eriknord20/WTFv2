@@ -13,4 +13,8 @@ defmodule Pluggy.User do
   def to_struct([[id, username]]) do
     %User{id: id, username: username}
   end
+
+  # def to_json do
+  #   "{'username':}"
+  # end
 end

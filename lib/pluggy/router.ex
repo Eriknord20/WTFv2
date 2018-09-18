@@ -21,6 +21,12 @@ defmodule Pluggy.Router do
   plug(:match)
   plug(:dispatch)
 
+  # get("/students")
+  # get("/students/:id")
+  # post("/students")
+  # patch("/students/:id")
+  # delete("/students/:id")
+
   get("/students/new", do: StudentController.new(conn))
   get("/students/test", do: StudentController.test(conn))
   get("/students", do: StudentController.index(conn))
